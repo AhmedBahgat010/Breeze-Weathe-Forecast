@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231496090015",
+    "project_id": "breeze-weather-forecast-17345",
+    "storage_bucket": "breeze-weather-forecast-17345.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231496090015:android:c7e44199c166e32f603daa",
+        "android_client_info": {
+          "package_name": "com.example.breeze_weather_forecast"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbWl5NfV5NVcbt5gHdXaYfiYM4vxX5RjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
