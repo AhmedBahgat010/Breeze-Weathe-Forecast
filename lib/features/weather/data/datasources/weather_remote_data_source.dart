@@ -4,6 +4,8 @@ import 'package:breeze_weather_forecast/core/usecase/weather_usecase/lat_long.da
 import 'package:http/http.dart' as http;
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/resources/constats.dart';
+import '../../../../core/translations/app_language.dart';
+import '../../../../core/translations/utils/local_storage/local_storgae.dart';
 import '../models/weather_model.dart';
 
 abstract class WeatherRemoteDataSource {
@@ -12,8 +14,7 @@ abstract class WeatherRemoteDataSource {
 
 class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
   final http.Client client;
-
-  WeatherRemoteDataSourceImpl({required this.client});
+ WeatherRemoteDataSourceImpl( {required this.client, });
 
   @override
   Future<WeatherModel> getWeather(LatLong latLong) async {
@@ -21,7 +22,7 @@ class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
       Uri.parse(
         "https://samples.openweathermap.org/data/2.5/forecast?lat=${latLong.lat}&lon=${latLong.long}&appid=$API_KEY"
       ),   );
-  log("https://samples.openweathermap.org/data/2.5/forecast?lat=${latLong.lat}&lon=${latLong.long}&appid=$API_KEY");
+  log("https://api.openweathermap.org/data/2.5/weather?lat=${latLong.lat}&lon=${latLong.long}&appid=$API_KEY");
     log("Response body: ${response.body}"); 
     if (response.statusCode == 200) {
   final Map<String, dynamic> jsonResponse = json.decode(response.body);
@@ -30,3 +31,4 @@ class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
     }
   }
 }
+//https://samples.openweathermap.org/data/2.5/forecast?lat=${latLong.lat}&lon=${latLong.long}&appid=$API_KEY

@@ -28,6 +28,7 @@ class CurrentMainData extends StatelessWidget {
             children: [
               text(120, currentWeather.current.toString()),
               /* + "\u00B0"*/
+              text(25, currentWeather.city),
               text(25, currentWeather.name),
               text(18, currentWeather.day),
             ],

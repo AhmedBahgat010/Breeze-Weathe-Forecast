@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
-
+final Color lightThemeForegroundColor = Color(0xff373739);
+final Color lightThemeLightBackgroundColor = Colors.grey[100]!;
+final Color lightThemeDarkBackgroundColor = Colors.grey[400]!;
+const redAccent = Colors.redAccent ;
+final Color darkThemeForegroundColor = Colors.grey[100]!;
+final Color darkThemeLightBackgroundColor = Color(0xff5c5c5c);
+final Color darkThemeDarkBackgroundColor = Color(0xff373739);
+const green = Colors.green ;
+const floatingActionButtonColor = Colors.red ;
 class Palette {
   Palette._();
 

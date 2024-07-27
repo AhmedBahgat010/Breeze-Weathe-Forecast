@@ -12,7 +12,7 @@ Widget dataError() {
   return  SingleChildScrollView(
               child: Column(
                 children: [
-                  CurrentWeatherView(CurrentWeather(current: 36, name: "Egypt", day: "Now", wind: 57, humidity: 56, chanceRain: 5, image: "assets/images/sunny.png")),
+                  CurrentWeatherView(CurrentWeather(current: 36, name: "clean",city: "Egypt", day: "Now", wind: 57, humidity: 56, chanceRain: 5, image: "assets/images/sunny.png")),
               
                         TodaysWeatherView(TodayWeatherData(todayWeatherData:[
                         TodayWeather(current: 72, time: '08:00 AM', image: 'assets/images/sunny.png'),

@@ -3,6 +3,7 @@ import 'package:equatable/equatable.dart';
 class CurrentWeather extends Equatable {
   final int current;
   final String name;
+  final String city;
   final String day;
   final int wind;
   final int humidity;
@@ -12,6 +13,7 @@ class CurrentWeather extends Equatable {
   const CurrentWeather({
     required this.current,
     required this.name,
+    required this.city,
     required this.day,
     required this.wind,
     required this.humidity,
